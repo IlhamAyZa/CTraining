@@ -11,10 +11,13 @@ int addNumbers(int n) {
 }
 
 int main() {
-
   int num;
-  printf("Enter a positive integer: ");
-  scanf("%d", &num);
+  
+  do{
+    printf("Enter a positive integer: ");
+    scanf("%d", &num);
+  }while (num < 0);
+  
   printf("\nSum = %d", addNumbers(num));
   return 0;
 }
